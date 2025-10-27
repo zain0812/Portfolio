@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammad Zain Ul Aabidin Portfolio</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', sans-serif; background: #0f172a; color: #e5e7eb; }
+.background-overlay {
+  position: absolute; inset: 0;
+  background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15; z-index: 0;
+}
+.fade-in { opacity: 0; transform: translateY(20px); transition: all 0.6s ease; }
+.fade-in.show { opacity: 1; transform: translateY(0); }
+.project-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.project-card:hover { transform: translateY(-5px) scale(1.03); box-shadow: 0 10px 25px rgba(6, 182, 212, 0.4); }
+input, textarea { background: #1f2937; border: 1px solid #374151; color: #e5e7eb; }
+input:focus, textarea:focus { border-color: #06b6d4; outline: none; }
+a:hover { color: #22d3ee; }
+</style>
+</head>
+<body>
+<div class="background-overlay" aria-hidden="true"></div>
+<div class="relative z-10 min-h-screen overflow-hidden">
+<!-- Header -->
+<header class="relative z-10 max-w-6xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between">
+<div>
+<h1 class="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Muhammad Zain Ul Aabidin</h1>
+<p class="text-sm sm:text-base mt-1 text-gray-300">Data Scientist | ML Enthusiast | Open Source Contributor</p>
+</div>
+<nav class="mt-4 sm:mt-0 space-x-4 text-sm text-gray-300">
+<a href="#about" class="hover:text-white">About</a>
+<a href="#projects" class="hover:text-white">Projects</a>
+<a href="#contact" class="hover:text-white">Contact</a>
+<a href="https://github.com/zain0812" target="_blank" class="ml-2 underline hover:text-cyan-400">GitHub</a>
+</nav>
+</header>
+<!-- Hero Section -->
+<section class="rounded-2xl p-8 sm:p-12 bg-gray-800/80 backdrop-blur shadow-lg max-w-6xl mx-auto mt-6 fade-in">
+<div class="flex flex-col sm:flex-row items-center sm:items-start gap-6">
+<img src="https://avatars.githubusercontent.com/u/166210191?s=400&u=25e08d14b472527bba74b322478db5716b893d5c&v=4" 
+alt="Avatar" class="w-32 h-32 rounded-full object-cover border-2 border-cyan-400 shadow-lg">
+<div>
+<h2 class="text-2xl sm:text-3xl font-semibold text-cyan-400">Hi — I’m Muhammad Zain Ul Aabidin</h2>
+<p class="mt-3 text-base leading-relaxed text-gray-300">
+I turn raw data into actionable insights. I specialize in building production-ready machine learning models, performing advanced analytics, and creating visually appealing, interactive dashboards. 
+I contribute to open-source projects and enjoy solving challenging problems in forecasting, NLP, computer vision, and data automation.
+</p>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section id="about" class="mt-10 rounded-2xl p-8 sm:p-12 bg-gray-800/80 backdrop-blur shadow-lg max-w-6xl mx-auto fade-in">
+<h3 class="text-xl font-semibold text-blue-400">About</h3>
+<div class="mt-6 text-gray-300 text-base leading-relaxed space-y-4">
+<p>I’m <strong class="text-white">Muhammad Zain Ul Aabidin</strong>, a data scientist passionate about making data understandable and actionable. I build solutions that not only predict outcomes but also explain patterns.</p>
+<p>My projects emphasize reproducibility: automated pipelines, robust validation frameworks, and clear visualizations. I enjoy tackling challenges in classification, forecasting, NLP, computer vision, and causal inference.</p>
+<p>I actively contribute to open-source projects on <a href="https://github.com/zain0812" target="_blank" class="underline text-cyan-400">GitHub</a>, sharing notebooks, tools, and experiments for learning and reproducibility.</p>
+<p>With strong problem-solving skills and a focus on impact, I bridge the gap between data analysis and real-world applications.</p>
+</div>
+</section>
+<!-- Projects Section -->
+<section id="projects" class="mt-10 max-w-6xl mx-auto fade-in">
+<h3 class="text-xl font-semibold text-blue-400 mb-6">Main Projects</h3>
+<div class="grid gap-6 md:grid-cols-2">
+
+<!-- Resume Project -->
+<div class="project-card rounded-xl p-6 bg-gray-800/90 backdrop-blur border border-gray-700">
+<h4 class="text-lg font-semibold text-white">Resume Project</h4>
+<p class="text-sm text-gray-400 mt-1">NLP resume analyzer</p>
+<p class="mt-3 text-sm leading-relaxed text-gray-300">
+A machine learning–powered resume analyzer that extracts, parses, and evaluates candidate data to predict role suitability. Includes automated text extraction, keyword matching, and skill-based scoring.
+</p>
+<div class="mt-3 flex flex-wrap gap-2">
+<span class="text-xs px-2 py-1 rounded-full bg-cyan-900/40 text-cyan-300 border border-cyan-600">Python</span>
+<span class="text-xs px-2 py-1 rounded-full bg-cyan-900/40 text-cyan-300 border border-cyan-600">NLP</span>
+<span class="text-xs px-2 py-1 rounded-full bg-cyan-900/40 text-cyan-300 border border-cyan-600">Scikit-learn</span>
+<span class="text-xs px-2 py-1 rounded-full bg-cyan-900/40 text-cyan-300 border border-cyan-600">Flask</span>
+<span class="text-xs px-2 py-1 rounded-full bg-cyan-900/40 text-cyan-300 border border-cyan-600">Pandas</span>
+</div>
+<div class="mt-4 flex items-center justify-between text-sm">
+<a href="https://github.com/zain0812" target="_blank" class="underline text-cyan-400">View on GitHub</a>
+</div>
+</div>
+
+<!-- Altcoins Analysis -->
+<div class="project-card rounded-xl p-6 bg-gray-800/90 backdrop-blur border border-gray-700">
+<h4 class="text-lg font-semibold text-white">Altcoins Analysis</h4>
+<p class="text-sm text-gray-400 mt-1">Crypto time-series & volatility</p>
+<p class="mt-3 text-sm leading-relaxed text-gray-300">
+Analyzed cryptocurrency markets using time-series analysis and volatility modeling to detect trends. Visualized insights to understand patterns and anomalies in altcoins behavior.
+</p>
+<div class="mt-3 flex flex-wrap gap-2">
+<span class="text-xs px-2 py-1 rounded-full bg-cyan-900/40 text-cyan-300 border border-cyan-600">Python</span>
+<span class="text-xs px-2 py-1 rounded-full bg-cyan-900/40 text-cyan-300 border border-cyan-600">Pandas</span>
+<span class="text-xs px-2 py-1 rounded-full bg-cyan-900/40 text-cyan-300 border border-cyan-600">NumPy</span>
+<span class="text-xs px-2 py-1 rounded-full bg-cyan-900/40 text-cyan-300 border border-cyan-600">Matplotlib</span>
+<span class="text-xs px-2 py-1 rounded-full bg-cyan-900/40 text-cyan-300 border border-cyan-600">Seaborn</span>
+</div>
+<div class="mt-4 flex items-center justify-between text-sm">
+<a href="https://github.com/zain0812" target="_blank" class="underline text-cyan-400">View on GitHub</a>
+</div>
+</div>
+
+<!-- CAPTCHA Solver -->
+<div class="project-card rounded-xl p-6 bg-gray-800/90 backdrop-blur border border-gray-700">
+<h4 class="text-lg font-semibold text-white">CAPTCHA Solver</h4>
+<p class="text-sm text-gray-400 mt-1">Computer vision + deep learning</p>
+<p class="mt-3 text-sm leading-relaxed text-gray-300">
+Built an image-based CAPTCHA solver using CNNs and OpenCV, focused on preprocessing, segmentation, and robustness evaluation of models.
+</p>
+<div class="mt-3 flex flex-wrap gap-2">
+<span class="text-xs px-2 py-1 rounded-full bg-cyan-900/40 text-cyan-300 border border-cyan-600">TensorFlow</span>
+<span class="text-xs px-2 py-1 rounded-full bg-cyan-900/40 text-cyan-300 border border-cyan-600">OpenCV</span>
+<span class="text-xs px-2 py-1 rounded-full bg-cyan-900/40 text-cyan-300 border border-cyan-600">CNN</span>
+</div>
+<div class="mt-4 flex items-center justify-between text-sm">
+<a href="https://github.com/zain0812" target="_blank" class="underline text-cyan-400">View on GitHub</a>
+</div>
+</div>
+
+<!-- Other Projects -->
+<div class="project-card rounded-xl p-6 bg-gray-800/90 backdrop-blur border border-gray-700">
+<h4 class="text-lg font-semibold text-white">Other Projects</h4>
+<p class="text-sm text-gray-400 mt-1">Experiments & utilities</p>
+<p class="mt-3 text-sm leading-relaxed text-gray-300">
+Collection of smaller experiments and utilities across ML, automation, and visualization. Documented with reproducible notebooks for learning and replication.
+</p>
+<div class="mt-3 flex flex-wrap gap-2">
+<span class="text-xs px-2 py-1 rounded-full bg-cyan-900/40 text-cyan-300 border border-cyan-600">Python</span>
+<span class="text-xs px-2 py-1 rounded-full bg-cyan-900/40 text-cyan-300 border border-cyan-600">Jupyter</span>
+<span class="text-xs px-2 py-1 rounded-full bg-cyan-900/40 text-cyan-300 border border-cyan-600">Streamlit</span>
+</div>
+<div class="mt-4 flex items-center justify-between text-sm">
+<a href="https://github.com/zain0812" target="_blank" class="underline text-cyan-400">View on GitHub</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- Contact and Footer sections remain the same -->
+<section id="contact" class="mt-10 rounded-2xl p-8 sm:p-12 bg-gray-800/80 backdrop-blur shadow-lg max-w-6xl mx-auto fade-in">
+<h3 class="text-xl font-semibold text-blue-400">Contact</h3>
+<p class="mt-3 text-gray-300 text-base leading-relaxed">
+Let’s connect and collaborate! I respond to inquiries about data science consulting, collaborations, and open-source contributions.
+</p>
+<div class="mt-6 grid sm:grid-cols-2 gap-8">
+<div class="space-y-3">
+<p class="text-sm font-medium text-cyan-300">Email</p>
+<a href="mailto:mzainaabidin931@gmail.com" class="text-sm underline text-gray-200">mzainaabidin931@gmail.com</a>
+<p class="text-sm font-medium text-cyan-300">Phone</p>
+<a href="tel:+393508452198" class="text-sm underline text-gray-200">+39 350 845 2198</a>
+<p class="text-sm font-medium text-cyan-300">GitHub</p>
+<a href="https://github.com/zain0812" target="_blank" class="text-sm underline text-gray-200">github.com/zain0812</a>
+</div>
+<div>
+<p class="text-sm font-medium text-cyan-300">Message</p>
+<form action="#" method="POST" class="mt-3 flex flex-col gap-3">
+<input name="name" placeholder="Your name" class="px-3 py-2 rounded" required />
+<input name="email" placeholder="Your email" class="px-3 py-2 rounded" required />
+<textarea name="message" placeholder="Message" rows="4" class="px-3 py-2 rounded" required></textarea>
+<button type="submit" class="mt-2 px-5 py-2 rounded bg-cyan-600 hover:bg-cyan-500 text-white font-medium transition">Send</button>
+</form>
+</div>
+</div>
+</section>
+
+<footer class="mt-12 text-center text-xs text-gray-500 max-w-6xl mx-auto fade-in">
+© 2025 Muhammad Zain Ul Aabidin — Built with HTML & Tailwind
+</footer>
+
+</div>
+<script>
+const faders = document.querySelectorAll('.fade-in');
+const appearOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
+entries.forEach(entry => { 
+if(entry.isIntersecting){ 
+entry.target.classList.add('show'); 
+appearOnScroll.unobserve(entry.target); 
+} 
+});
+}, appearOptions);
+faders.forEach(fader => appearOnScroll.observe(fader));
+</script>
+</body>
+</html>
